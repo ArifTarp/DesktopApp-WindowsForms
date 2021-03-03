@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWinFormsApp.DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWinFormsApp.Business", "DesktopWinFormsApp.Business\DesktopWinFormsApp.Business.csproj", "{5F3460BF-062F-4AED-9073-040C24F18EDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWinFormsApp.UI", "DesktopWinFormsApp.UI\DesktopWinFormsApp.UI.csproj", "{71403596-5FA6-457F-8FDE-72EEFAE77C12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F3460BF-062F-4AED-9073-040C24F18EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3460BF-062F-4AED-9073-040C24F18EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3460BF-062F-4AED-9073-040C24F18EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71403596-5FA6-457F-8FDE-72EEFAE77C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71403596-5FA6-457F-8FDE-72EEFAE77C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71403596-5FA6-457F-8FDE-72EEFAE77C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71403596-5FA6-457F-8FDE-72EEFAE77C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
