@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopWinFormsApp.Business\DesktopWinFormsApp.Business.csproj">
+      <Project>{2c43cf30-7f6f-4ba7-8912-9bca3b71ca14}</Project>
+      <Name>DesktopWinFormsApp.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesktopWinFormsApp.Entity\DesktopWinFormsApp.Entity.csproj">
+      <Project>{48c77948-c324-411a-bd7b-de991ab5e68d}</Project>
+      <Name>DesktopWinFormsApp.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

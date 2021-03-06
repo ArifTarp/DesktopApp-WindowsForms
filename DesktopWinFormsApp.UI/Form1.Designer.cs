@@ -37,17 +37,17 @@ namespace DesktopWinFormsApp.UI
             this.lblProduct = new System.Windows.Forms.Label();
             this.dgwProduct = new System.Windows.Forms.DataGridView();
             this.gbxAddProduct = new System.Windows.Forms.GroupBox();
-            this.lblProductNameForAddProduct = new System.Windows.Forms.Label();
-            this.lblCategoryForAddProduct = new System.Windows.Forms.Label();
-            this.lblUnitPriceForAddProduct = new System.Windows.Forms.Label();
-            this.lblStockForAddProduct = new System.Windows.Forms.Label();
-            this.lblQuantityPerUnitForAddProduct = new System.Windows.Forms.Label();
-            this.tbxProductNameForAddProduct = new System.Windows.Forms.TextBox();
-            this.tbxUnitPriceForAddProduct = new System.Windows.Forms.TextBox();
-            this.tbxStockForAddProduct = new System.Windows.Forms.TextBox();
-            this.tbxQuantityPerUnitForAddProduct = new System.Windows.Forms.TextBox();
-            this.cbxCategoryForAddProduct = new System.Windows.Forms.ComboBox();
             this.btnAddForAddProduct = new System.Windows.Forms.Button();
+            this.cbxCategoryForAddProduct = new System.Windows.Forms.ComboBox();
+            this.tbxQuantityPerUnitForAddProduct = new System.Windows.Forms.TextBox();
+            this.tbxStockForAddProduct = new System.Windows.Forms.TextBox();
+            this.tbxUnitPriceForAddProduct = new System.Windows.Forms.TextBox();
+            this.tbxProductNameForAddProduct = new System.Windows.Forms.TextBox();
+            this.lblQuantityPerUnitForAddProduct = new System.Windows.Forms.Label();
+            this.lblStockForAddProduct = new System.Windows.Forms.Label();
+            this.lblUnitPriceForAddProduct = new System.Windows.Forms.Label();
+            this.lblCategoryForAddProduct = new System.Windows.Forms.Label();
+            this.lblProductNameForAddProduct = new System.Windows.Forms.Label();
             this.gbxUpdateProduct = new System.Windows.Forms.GroupBox();
             this.btnUpdateForUpdateProduct = new System.Windows.Forms.Button();
             this.cbxCategoryForUpdateProduct = new System.Windows.Forms.ComboBox();
@@ -86,6 +86,7 @@ namespace DesktopWinFormsApp.UI
             this.cbxCategoryForSearch.Name = "cbxCategoryForSearch";
             this.cbxCategoryForSearch.Size = new System.Drawing.Size(320, 24);
             this.cbxCategoryForSearch.TabIndex = 1;
+            this.cbxCategoryForSearch.SelectedIndexChanged += new System.EventHandler(this.cbxCategoryForSearch_SelectedIndexChanged);
             // 
             // lblCategory
             // 
@@ -113,6 +114,7 @@ namespace DesktopWinFormsApp.UI
             this.tbxProductForSearch.Name = "tbxProductForSearch";
             this.tbxProductForSearch.Size = new System.Drawing.Size(320, 22);
             this.tbxProductForSearch.TabIndex = 2;
+            this.tbxProductForSearch.TextChanged += new System.EventHandler(this.tbxProductForSearch_TextChanged);
             // 
             // lblProduct
             // 
@@ -153,41 +155,51 @@ namespace DesktopWinFormsApp.UI
             this.gbxAddProduct.TabStop = false;
             this.gbxAddProduct.Text = "Add New Product";
             // 
-            // lblProductNameForAddProduct
+            // btnAddForAddProduct
             // 
-            this.lblProductNameForAddProduct.AutoSize = true;
-            this.lblProductNameForAddProduct.Location = new System.Drawing.Point(13, 31);
-            this.lblProductNameForAddProduct.Name = "lblProductNameForAddProduct";
-            this.lblProductNameForAddProduct.Size = new System.Drawing.Size(98, 17);
-            this.lblProductNameForAddProduct.TabIndex = 0;
-            this.lblProductNameForAddProduct.Text = "Product Name";
+            this.btnAddForAddProduct.Location = new System.Drawing.Point(54, 243);
+            this.btnAddForAddProduct.Name = "btnAddForAddProduct";
+            this.btnAddForAddProduct.Size = new System.Drawing.Size(238, 27);
+            this.btnAddForAddProduct.TabIndex = 4;
+            this.btnAddForAddProduct.Text = "Add Product";
+            this.btnAddForAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddForAddProduct.Click += new System.EventHandler(this.btnAddForAddProduct_Click);
             // 
-            // lblCategoryForAddProduct
+            // cbxCategoryForAddProduct
             // 
-            this.lblCategoryForAddProduct.AutoSize = true;
-            this.lblCategoryForAddProduct.Location = new System.Drawing.Point(13, 70);
-            this.lblCategoryForAddProduct.Name = "lblCategoryForAddProduct";
-            this.lblCategoryForAddProduct.Size = new System.Drawing.Size(65, 17);
-            this.lblCategoryForAddProduct.TabIndex = 1;
-            this.lblCategoryForAddProduct.Text = "Category";
+            this.cbxCategoryForAddProduct.FormattingEnabled = true;
+            this.cbxCategoryForAddProduct.Location = new System.Drawing.Point(135, 63);
+            this.cbxCategoryForAddProduct.Name = "cbxCategoryForAddProduct";
+            this.cbxCategoryForAddProduct.Size = new System.Drawing.Size(192, 24);
+            this.cbxCategoryForAddProduct.TabIndex = 9;
             // 
-            // lblUnitPriceForAddProduct
+            // tbxQuantityPerUnitForAddProduct
             // 
-            this.lblUnitPriceForAddProduct.AutoSize = true;
-            this.lblUnitPriceForAddProduct.Location = new System.Drawing.Point(13, 110);
-            this.lblUnitPriceForAddProduct.Name = "lblUnitPriceForAddProduct";
-            this.lblUnitPriceForAddProduct.Size = new System.Drawing.Size(69, 17);
-            this.lblUnitPriceForAddProduct.TabIndex = 2;
-            this.lblUnitPriceForAddProduct.Text = "Unit Price";
+            this.tbxQuantityPerUnitForAddProduct.Location = new System.Drawing.Point(135, 197);
+            this.tbxQuantityPerUnitForAddProduct.Name = "tbxQuantityPerUnitForAddProduct";
+            this.tbxQuantityPerUnitForAddProduct.Size = new System.Drawing.Size(192, 22);
+            this.tbxQuantityPerUnitForAddProduct.TabIndex = 8;
             // 
-            // lblStockForAddProduct
+            // tbxStockForAddProduct
             // 
-            this.lblStockForAddProduct.AutoSize = true;
-            this.lblStockForAddProduct.Location = new System.Drawing.Point(13, 153);
-            this.lblStockForAddProduct.Name = "lblStockForAddProduct";
-            this.lblStockForAddProduct.Size = new System.Drawing.Size(43, 17);
-            this.lblStockForAddProduct.TabIndex = 3;
-            this.lblStockForAddProduct.Text = "Stock";
+            this.tbxStockForAddProduct.Location = new System.Drawing.Point(135, 148);
+            this.tbxStockForAddProduct.Name = "tbxStockForAddProduct";
+            this.tbxStockForAddProduct.Size = new System.Drawing.Size(192, 22);
+            this.tbxStockForAddProduct.TabIndex = 7;
+            // 
+            // tbxUnitPriceForAddProduct
+            // 
+            this.tbxUnitPriceForAddProduct.Location = new System.Drawing.Point(135, 105);
+            this.tbxUnitPriceForAddProduct.Name = "tbxUnitPriceForAddProduct";
+            this.tbxUnitPriceForAddProduct.Size = new System.Drawing.Size(192, 22);
+            this.tbxUnitPriceForAddProduct.TabIndex = 6;
+            // 
+            // tbxProductNameForAddProduct
+            // 
+            this.tbxProductNameForAddProduct.Location = new System.Drawing.Point(135, 26);
+            this.tbxProductNameForAddProduct.Name = "tbxProductNameForAddProduct";
+            this.tbxProductNameForAddProduct.Size = new System.Drawing.Size(192, 22);
+            this.tbxProductNameForAddProduct.TabIndex = 5;
             // 
             // lblQuantityPerUnitForAddProduct
             // 
@@ -198,50 +210,41 @@ namespace DesktopWinFormsApp.UI
             this.lblQuantityPerUnitForAddProduct.TabIndex = 4;
             this.lblQuantityPerUnitForAddProduct.Text = "Quantity Per Unit";
             // 
-            // tbxProductNameForAddProduct
+            // lblStockForAddProduct
             // 
-            this.tbxProductNameForAddProduct.Location = new System.Drawing.Point(135, 26);
-            this.tbxProductNameForAddProduct.Name = "tbxProductNameForAddProduct";
-            this.tbxProductNameForAddProduct.Size = new System.Drawing.Size(192, 22);
-            this.tbxProductNameForAddProduct.TabIndex = 5;
+            this.lblStockForAddProduct.AutoSize = true;
+            this.lblStockForAddProduct.Location = new System.Drawing.Point(13, 153);
+            this.lblStockForAddProduct.Name = "lblStockForAddProduct";
+            this.lblStockForAddProduct.Size = new System.Drawing.Size(43, 17);
+            this.lblStockForAddProduct.TabIndex = 3;
+            this.lblStockForAddProduct.Text = "Stock";
             // 
-            // tbxUnitPriceForAddProduct
+            // lblUnitPriceForAddProduct
             // 
-            this.tbxUnitPriceForAddProduct.Location = new System.Drawing.Point(135, 105);
-            this.tbxUnitPriceForAddProduct.Name = "tbxUnitPriceForAddProduct";
-            this.tbxUnitPriceForAddProduct.Size = new System.Drawing.Size(192, 22);
-            this.tbxUnitPriceForAddProduct.TabIndex = 6;
+            this.lblUnitPriceForAddProduct.AutoSize = true;
+            this.lblUnitPriceForAddProduct.Location = new System.Drawing.Point(13, 110);
+            this.lblUnitPriceForAddProduct.Name = "lblUnitPriceForAddProduct";
+            this.lblUnitPriceForAddProduct.Size = new System.Drawing.Size(69, 17);
+            this.lblUnitPriceForAddProduct.TabIndex = 2;
+            this.lblUnitPriceForAddProduct.Text = "Unit Price";
             // 
-            // tbxStockForAddProduct
+            // lblCategoryForAddProduct
             // 
-            this.tbxStockForAddProduct.Location = new System.Drawing.Point(135, 148);
-            this.tbxStockForAddProduct.Name = "tbxStockForAddProduct";
-            this.tbxStockForAddProduct.Size = new System.Drawing.Size(192, 22);
-            this.tbxStockForAddProduct.TabIndex = 7;
+            this.lblCategoryForAddProduct.AutoSize = true;
+            this.lblCategoryForAddProduct.Location = new System.Drawing.Point(13, 70);
+            this.lblCategoryForAddProduct.Name = "lblCategoryForAddProduct";
+            this.lblCategoryForAddProduct.Size = new System.Drawing.Size(65, 17);
+            this.lblCategoryForAddProduct.TabIndex = 1;
+            this.lblCategoryForAddProduct.Text = "Category";
             // 
-            // tbxQuantityPerUnitForAddProduct
+            // lblProductNameForAddProduct
             // 
-            this.tbxQuantityPerUnitForAddProduct.Location = new System.Drawing.Point(135, 197);
-            this.tbxQuantityPerUnitForAddProduct.Name = "tbxQuantityPerUnitForAddProduct";
-            this.tbxQuantityPerUnitForAddProduct.Size = new System.Drawing.Size(192, 22);
-            this.tbxQuantityPerUnitForAddProduct.TabIndex = 8;
-            // 
-            // cbxCategoryForAddProduct
-            // 
-            this.cbxCategoryForAddProduct.FormattingEnabled = true;
-            this.cbxCategoryForAddProduct.Location = new System.Drawing.Point(135, 63);
-            this.cbxCategoryForAddProduct.Name = "cbxCategoryForAddProduct";
-            this.cbxCategoryForAddProduct.Size = new System.Drawing.Size(192, 24);
-            this.cbxCategoryForAddProduct.TabIndex = 9;
-            // 
-            // btnAddForAddProduct
-            // 
-            this.btnAddForAddProduct.Location = new System.Drawing.Point(54, 243);
-            this.btnAddForAddProduct.Name = "btnAddForAddProduct";
-            this.btnAddForAddProduct.Size = new System.Drawing.Size(238, 27);
-            this.btnAddForAddProduct.TabIndex = 4;
-            this.btnAddForAddProduct.Text = "Add Product";
-            this.btnAddForAddProduct.UseVisualStyleBackColor = true;
+            this.lblProductNameForAddProduct.AutoSize = true;
+            this.lblProductNameForAddProduct.Location = new System.Drawing.Point(13, 31);
+            this.lblProductNameForAddProduct.Name = "lblProductNameForAddProduct";
+            this.lblProductNameForAddProduct.Size = new System.Drawing.Size(98, 17);
+            this.lblProductNameForAddProduct.TabIndex = 0;
+            this.lblProductNameForAddProduct.Text = "Product Name";
             // 
             // gbxUpdateProduct
             // 
@@ -271,6 +274,7 @@ namespace DesktopWinFormsApp.UI
             this.btnUpdateForUpdateProduct.TabIndex = 4;
             this.btnUpdateForUpdateProduct.Text = "Update Product";
             this.btnUpdateForUpdateProduct.UseVisualStyleBackColor = true;
+            this.btnUpdateForUpdateProduct.Click += new System.EventHandler(this.btnUpdateForUpdateProduct_Click);
             // 
             // cbxCategoryForUpdateProduct
             // 
@@ -361,6 +365,7 @@ namespace DesktopWinFormsApp.UI
             this.btnDeleteForDeleteProduct.TabIndex = 5;
             this.btnDeleteForDeleteProduct.Text = "Delete Selected Product";
             this.btnDeleteForDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteForDeleteProduct.Click += new System.EventHandler(this.btnDeleteForDeleteProduct_Click);
             // 
             // Form1
             // 
