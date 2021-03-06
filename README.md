@@ -2,7 +2,7 @@
 This project includes my old works.
 ### Used Technologies
 - Windows Forms App
-- Sql
+- Sql ([Used northwind db as example](https://github.com/ArifTarp/DesktopApp-WindowsForms/tree/main/DesktopWinFormsApp.DataAccess/Concrete/Db%20Script))
 - Fluent Validation
 - Ninject Container
 ### Functionalities in project
