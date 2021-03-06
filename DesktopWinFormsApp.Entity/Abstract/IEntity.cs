@@ -8,6 +8,5 @@ namespace DesktopWinFormsApp.Entity.Abstract
 {
     public interface IEntity
     {
-
     }
 }

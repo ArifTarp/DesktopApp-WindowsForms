@@ -1,10 +1,10 @@
-﻿using System;
+﻿using DesktopWinFormsApp.Entity.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using DesktopWinFormsApp.Entity.Abstract;
 
 namespace DesktopWinFormsApp.DataAccess.Abstract
 {

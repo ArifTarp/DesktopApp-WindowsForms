@@ -1,17 +1,17 @@
-﻿using System;
+﻿using DesktopWinFormsApp.DataAccess.Abstract;
+using DesktopWinFormsApp.Entity.Abstract;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using DesktopWinFormsApp.DataAccess.Abstract;
-using DesktopWinFormsApp.Entity.Abstract;
-using Microsoft.EntityFrameworkCore;
 
 namespace DesktopWinFormsApp.DataAccess.Concrete.EntityFramework
 {
-    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity> 
-        where TEntity : class, IEntity, new() 
+    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
+        where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {
         public void Add(TEntity entity)

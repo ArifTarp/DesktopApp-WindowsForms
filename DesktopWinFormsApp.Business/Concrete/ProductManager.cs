@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DesktopWinFormsApp.Business.Abstract;
+﻿using DesktopWinFormsApp.Business.Abstract;
 using DesktopWinFormsApp.Business.Utilities;
 using DesktopWinFormsApp.Business.ValidationRules.FluentValidation;
 using DesktopWinFormsApp.DataAccess.Abstract;
 using DesktopWinFormsApp.Entity.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DesktopWinFormsApp.Business.Concrete
 {
@@ -27,12 +27,12 @@ namespace DesktopWinFormsApp.Business.Concrete
 
         public List<Product> GetProductsByCategory(int categoryId)
         {
-            return _productDal.GetAll(p=>p.CategoryId == categoryId);
+            return _productDal.GetAll(p => p.CategoryId == categoryId);
         }
 
         public List<Product> GetProductsByProductName(string productName, int categoryId)
         {
-            return _productDal.GetAll(p=>p.ProductName.ToLower().Contains(productName.ToLower()) & p.CategoryId == categoryId);
+            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(productName.ToLower()) & p.CategoryId == categoryId);
         }
 
         public void Add(Product product)

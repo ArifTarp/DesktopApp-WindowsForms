@@ -1,13 +1,13 @@
-﻿using System;
+﻿using DesktopWinFormsApp.Business.Abstract;
+using DesktopWinFormsApp.Business.Concrete;
+using DesktopWinFormsApp.DataAccess.Abstract;
+using DesktopWinFormsApp.DataAccess.Concrete.EntityFramework;
+using Ninject.Modules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ninject.Modules;
-using DesktopWinFormsApp.Business.Abstract;
-using DesktopWinFormsApp.Business.Concrete;
-using DesktopWinFormsApp.DataAccess.Abstract;
-using DesktopWinFormsApp.DataAccess.Concrete.EntityFramework;
 
 namespace DesktopWinFormsApp.Business.DependencyResolvers.Ninject
 {
