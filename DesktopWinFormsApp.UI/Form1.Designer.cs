@@ -74,7 +74,7 @@ namespace DesktopWinFormsApp.UI
             this.gbxCategory.Controls.Add(this.lblCategory);
             this.gbxCategory.Location = new System.Drawing.Point(12, 12);
             this.gbxCategory.Name = "gbxCategory";
-            this.gbxCategory.Size = new System.Drawing.Size(1030, 100);
+            this.gbxCategory.Size = new System.Drawing.Size(901, 100);
             this.gbxCategory.TabIndex = 0;
             this.gbxCategory.TabStop = false;
             this.gbxCategory.Text = "Search by category";
@@ -82,7 +82,7 @@ namespace DesktopWinFormsApp.UI
             // cbxCategoryForSearch
             // 
             this.cbxCategoryForSearch.FormattingEnabled = true;
-            this.cbxCategoryForSearch.Location = new System.Drawing.Point(375, 42);
+            this.cbxCategoryForSearch.Location = new System.Drawing.Point(358, 42);
             this.cbxCategoryForSearch.Name = "cbxCategoryForSearch";
             this.cbxCategoryForSearch.Size = new System.Drawing.Size(320, 24);
             this.cbxCategoryForSearch.TabIndex = 1;
@@ -91,7 +91,7 @@ namespace DesktopWinFormsApp.UI
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(277, 49);
+            this.lblCategory.Location = new System.Drawing.Point(270, 49);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(65, 17);
             this.lblCategory.TabIndex = 0;
@@ -103,14 +103,14 @@ namespace DesktopWinFormsApp.UI
             this.gbxProduct.Controls.Add(this.lblProduct);
             this.gbxProduct.Location = new System.Drawing.Point(12, 130);
             this.gbxProduct.Name = "gbxProduct";
-            this.gbxProduct.Size = new System.Drawing.Size(1030, 100);
+            this.gbxProduct.Size = new System.Drawing.Size(901, 100);
             this.gbxProduct.TabIndex = 1;
             this.gbxProduct.TabStop = false;
             this.gbxProduct.Text = "Search by product";
             // 
             // tbxProductForSearch
             // 
-            this.tbxProductForSearch.Location = new System.Drawing.Point(375, 40);
+            this.tbxProductForSearch.Location = new System.Drawing.Point(358, 38);
             this.tbxProductForSearch.Name = "tbxProductForSearch";
             this.tbxProductForSearch.Size = new System.Drawing.Size(320, 22);
             this.tbxProductForSearch.TabIndex = 2;
@@ -119,7 +119,7 @@ namespace DesktopWinFormsApp.UI
             // lblProduct
             // 
             this.lblProduct.AutoSize = true;
-            this.lblProduct.Location = new System.Drawing.Point(277, 45);
+            this.lblProduct.Location = new System.Drawing.Point(270, 43);
             this.lblProduct.Name = "lblProduct";
             this.lblProduct.Size = new System.Drawing.Size(57, 17);
             this.lblProduct.TabIndex = 1;
@@ -128,11 +128,11 @@ namespace DesktopWinFormsApp.UI
             // dgwProduct
             // 
             this.dgwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProduct.Location = new System.Drawing.Point(12, 248);
+            this.dgwProduct.Location = new System.Drawing.Point(12, 251);
             this.dgwProduct.Name = "dgwProduct";
             this.dgwProduct.RowHeadersWidth = 51;
             this.dgwProduct.RowTemplate.Height = 24;
-            this.dgwProduct.Size = new System.Drawing.Size(1030, 238);
+            this.dgwProduct.Size = new System.Drawing.Size(901, 238);
             this.dgwProduct.TabIndex = 2;
             this.dgwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProduct_CellClick);
             // 
@@ -360,9 +360,9 @@ namespace DesktopWinFormsApp.UI
             // 
             // btnDeleteForDeleteProduct
             // 
-            this.btnDeleteForDeleteProduct.Location = new System.Drawing.Point(849, 529);
+            this.btnDeleteForDeleteProduct.Location = new System.Drawing.Point(761, 529);
             this.btnDeleteForDeleteProduct.Name = "btnDeleteForDeleteProduct";
-            this.btnDeleteForDeleteProduct.Size = new System.Drawing.Size(193, 48);
+            this.btnDeleteForDeleteProduct.Size = new System.Drawing.Size(152, 48);
             this.btnDeleteForDeleteProduct.TabIndex = 5;
             this.btnDeleteForDeleteProduct.Text = "Delete Selected Product";
             this.btnDeleteForDeleteProduct.UseVisualStyleBackColor = true;
@@ -372,7 +372,7 @@ namespace DesktopWinFormsApp.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 804);
+            this.ClientSize = new System.Drawing.Size(922, 804);
             this.Controls.Add(this.btnDeleteForDeleteProduct);
             this.Controls.Add(this.gbxUpdateProduct);
             this.Controls.Add(this.gbxAddProduct);
@@ -380,7 +380,7 @@ namespace DesktopWinFormsApp.UI
             this.Controls.Add(this.gbxProduct);
             this.Controls.Add(this.gbxCategory);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Products";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxCategory.ResumeLayout(false);
             this.gbxCategory.PerformLayout();
