@@ -141,5 +141,15 @@ namespace DesktopWinFormsApp.UI
                 MessageBox.Show(exception.Message);
             }
         }
+
+        private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dgwProduct.CurrentRow;
+            tbxProductNameForUpdateProduct.Text = row.Cells[1].Value.ToString();
+            cbxCategoryForUpdateProduct.SelectedValue = row.Cells[2].Value;
+            tbxUnitPriceForUpdateProduct.Text = row.Cells[3].Value.ToString();
+            tbxQuantityPerUnitForUpdateProduct.Text = row.Cells[4].Value.ToString();
+            tbxStockForUpdateProduct.Text = row.Cells[5].Value.ToString();
+        }
     }
 }

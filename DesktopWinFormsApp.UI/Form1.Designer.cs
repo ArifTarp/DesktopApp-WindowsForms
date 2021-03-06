@@ -134,6 +134,7 @@ namespace DesktopWinFormsApp.UI
             this.dgwProduct.RowTemplate.Height = 24;
             this.dgwProduct.Size = new System.Drawing.Size(1030, 238);
             this.dgwProduct.TabIndex = 2;
+            this.dgwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProduct_CellClick);
             // 
             // gbxAddProduct
             // 
