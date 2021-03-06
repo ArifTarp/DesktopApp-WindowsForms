@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.3.3" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DesktopWinFormsApp.DataAccess\DesktopWinFormsApp.DataAccess.csproj" />
     <ProjectReference Include="..\DesktopWinFormsApp.Entity\DesktopWinFormsApp.Entity.csproj" />
   </ItemGroup>
