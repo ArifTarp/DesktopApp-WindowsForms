@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopWinFormsApp.DataAccess\DesktopWinFormsApp.DataAccess.csproj" />
+    <ProjectReference Include="..\DesktopWinFormsApp.Entity\DesktopWinFormsApp.Entity.csproj" />
+  </ItemGroup>
+
 </Project>
