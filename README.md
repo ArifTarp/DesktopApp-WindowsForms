@@ -1,5 +1,5 @@
 # Desktop App With Windows Forms
-This project is not a professional project. This project includes my old works.
+This project includes my old works.
 ### Used Technologies
 - Windows Forms App
 - Sql
