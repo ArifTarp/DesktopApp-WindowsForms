@@ -53,7 +53,13 @@ namespace DesktopWinFormsApp.UI
 
         private void cbxCategoryForSearch_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dgwProduct.DataSource = _productService.GetProductsByCategory(Convert.ToInt32(cbxCategoryForSearch.SelectedValue));
+            try
+            {
+                dgwProduct.DataSource = _productService.GetProductsByCategory(Convert.ToInt32(cbxCategoryForSearch.SelectedValue));
+            }
+            catch
+            {
+            }
         }
 
         private void tbxProductForSearch_TextChanged(object sender, EventArgs e)
